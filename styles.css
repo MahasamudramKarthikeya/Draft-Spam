@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px; /* Increased gap between circles */
+    padding: 20px; /* Padding to the container for visual spacing */
+}
+
+.channel {
+    width: 150px; /* Increased circle size */
+    height: 150px; /* Increased circle size */
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.channel img {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+}
+
+.channel:hover {
+    transform: scale(1.1);
+}
